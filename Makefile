@@ -1,3 +1,4 @@
+
 # SPDX-License-Identifier: GPL-2.0
 VERSION = 4
 PATCHLEVEL = 14
@@ -316,6 +317,8 @@ CROSS_COMPILE	?= $(CONFIG_CROSS_COMPILE:"%"=%)
 #ARCH            ?= arm64
 #CROSS_COMPILE   ?= $(srctree)/toolchain/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-
 
+export PLATFORM_VERSION := 10
+export ANDROID_MAJOR_VERSION := q
 
 # Architecture as present in compile.h
 UTS_MACHINE 	:= $(ARCH)
