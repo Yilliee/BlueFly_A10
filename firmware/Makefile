@@ -151,4 +151,7 @@ targets := $(patsubst $(obj)/%,%, \
 # final vmlinux link will fail.
 obj- := dummy
 
+# SPU signature verify
+obj-y += spu_verify/
+
 hostprogs-y := ihex2fw
