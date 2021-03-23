@@ -3,6 +3,10 @@
 #	exynos9610-universal9610.dtbo \
 #	exynos9611-universal9611.dtbo
 
-# always		:= $(dtb-y) $(dtbo-y)
+dtbo-$(CONFIG_SOC_EXYNOS9610) += \
+	exynos9611-m21_swa_open_00.dtbo \
+	exynos9611-m21_swa_open_06.dtbo
+
+always		:= $(dtbo-y)
 subdir-y	:= $(dts-dirs)
-clean-files	:= *.dtb *.dtbo
+clean-files	:= *.dtbo
